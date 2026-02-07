@@ -22,3 +22,13 @@ Colorful, modern personal portfolio website built with **HTML, CSS, JavaScript**
 1. Clone:
    ```bash
    git clone https://github.com/kalaiarasan20002/kalaiarasan20002.github.io.git
+
+   🗂️ Featured Repos
+
+Calculator: https://github.com/kalaiarasan20002/Calculator
+
+Food Delivery: https://github.com/kalaiarasan20002/food-delivery
+
+📬 Contact
+
+GitHub: https://github.com/kalaiarasan20002
