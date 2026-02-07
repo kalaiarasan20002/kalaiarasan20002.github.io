@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalai | Portfolio</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background blobs -->
+  <div class="bg">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">
+        <span class="logo-mark">K</span>
+        <span class="logo-text">Kalai</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn ghost" id="themeBtn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn menu" id="menuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-card">
+      <div class="drawer-top">
+        <div class="drawer-title">Menu</div>
+        <button class="btn ghost" id="closeBtn" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="drawer-links">
+        <a href="#home" class="drawer-link">Home</a>
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#skills" class="drawer-link">Skills</a>
+        <a href="#services" class="drawer-link">Services</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+      </div>
+      <div class="drawer-note">Built with HTML • CSS • JS</div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <main>
+    <section class="section hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="chip">
+            <span class="dot"></span>
+            Available for freelance
+          </div>
+
+          <h1 class="title">
+            Hi, I’m <span class="grad">Kalai</span> 👋 <br/>
+            <span class="muted">Web Developer</span>
+          </h1>
+
+          <p class="lead">
+            I build clean, fast, modern websites and UI components with a colorful, premium feel.
+            If you want a portfolio, landing page, or web app UI—let’s do it.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">
+              <i class="fa-solid fa-paper-plane"></i>
+              Hire Me
+            </a>
+            <a class="btn" href="#services">
+              <i class="fa-solid fa-layer-group"></i>
+              View Services
+            </a>
+          </div>
+
+          <div class="social">
+            <a class="icon-btn" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a class="icon-btn" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="icon-btn" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a class="icon-btn" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">25+</div>
+              <div class="stat-text">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2+</div>
+              <div class="stat-text">Years</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">100%</div>
+              <div class="stat-text">Effort 😄</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card profile">
+            <div class="profile-top">
+              <div class="avatar" aria-hidden="true">
+                <span>KA</span>
+              </div>
+              <div class="profile-meta">
+                <div class="name">Kalai Arasan</div>
+                <div class="role">Frontend Developer</div>
+              </div>
+              <div class="badge">
+                <i class="fa-solid fa-bolt"></i> Fast UI
+              </div>
+            </div>
+
+            <div class="profile-grid">
+              <div class="mini">
+                <div class="mini-ic i1"><i class="fa-solid fa-palette"></i></div>
+                <div>
+                  <div class="mini-title">Design</div>
+                  <div class="mini-sub">Colorful + clean</div>
+                </div>
+              </div>
+              <div class="mini">
+                <div class="mini-ic i2"><i class="fa-solid fa-code"></i></div>
+                <div>
+                  <div class="mini-title">Code</div>
+                  <div class="mini-sub">Modern & simple</div>
+                </div>
+              </div>
+              <div class="mini">
+                <div class="mini-ic i3"><i class="fa-solid fa-rocket"></i></div>
+                <div>
+                  <div class="mini-title">Speed</div>
+                  <div class="mini-sub">Optimized UI</div>
+                </div>
+              </div>
+              <div class="mini">
+                <div class="mini-ic i4"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <div class="mini-title">Quality</div>
+                  <div class="mini-sub">Responsive</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-bottom">
+              <div class="pill">
+                <i class="fa-solid fa-location-dot"></i> Tamil Nadu, India
+              </div>
+              <div class="pill">
+                <i class="fa-solid fa-envelope"></i> kalai@email.com
+              </div>
+            </div>
+          </div>
+
+          <div class="floating">
+            <div class="float-card">
+              <i class="fa-solid fa-star"></i>
+              <span>Premium UI vibes ✨</span>
+            </div>
+            <div class="float-card">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Animations</span>
+            </div>
+            <div class="float-card">
+              <i class="fa-solid fa-gauge-high"></i>
+              <span>Performance</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+        <span>Scroll</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sec-head">
+          <h2>About</h2>
+          <p>I make modern, colorful, responsive websites that actually feel professional.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3>Who I am</h3>
+            <p>
+              I’m a frontend-focused developer. I build landing pages, portfolios, and UI components with
+              clean code and smooth interactions. I care about design, performance, and mobile experience.
+            </p>
+
+            <div class="highlights">
+              <div class="hl">
+                <i class="fa-solid fa-check"></i> Clean UI layouts
+              </div>
+              <div class="hl">
+                <i class="fa-solid fa-check"></i> Responsive design
+              </div>
+              <div class="hl">
+                <i class="fa-solid fa-check"></i> Animations & micro-interactions
+              </div>
+              <div class="hl">
+                <i class="fa-solid fa-check"></i> SEO basics & performance
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Quick Info</h3>
+            <div class="info">
+              <div class="info-row">
+                <span class="k">Name</span>
+                <span class="v">Kalai Arasan</span>
+              </div>
+              <div class="info-row">
+                <span class="k">Role</span>
+                <span class="v">Frontend / Web Developer</span>
+              </div>
+              <div class="info-row">
+                <span class="k">Stack</span>
+                <span class="v">HTML, CSS, JS, React</span>
+              </div>
+              <div class="info-row">
+                <span class="k">Focus</span>
+                <span class="v">UI + Performance</span>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a class="btn primary" href="#contact">
+                <i class="fa-solid fa-handshake"></i>
+                Let’s work
+              </a>
+              <a class="btn" href="#skills">
+                <i class="fa-solid fa-chart-simple"></i>
+                Skills
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="sec-head">
+          <h2>Skills</h2>
+          <p>Real skills, not “I know everything” 😄</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card">
+            <div class="skill-head">
+              <div class="skill-ic s1"><i class="fa-brands fa-html5"></i></div>
+              <div>
+                <div class="skill-name">HTML</div>
+                <div class="skill-sub">Semantic + SEO-friendly</div>
+              </div>
+              <div class="skill-pct" data-pct="95">95%</div>
+            </div>
+            <div class="bar"><span data-width="95"></span></div>
+          </div>
+
+          <div class="card">
+            <div class="skill-head">
+              <div class="skill-ic s2"><i class="fa-brands fa-css3-alt"></i></div>
+              <div>
+                <div class="skill-name">CSS</div>
+                <div class="skill-sub">Layouts + Animations</div>
+              </div>
+              <div class="skill-pct" data-pct="90">90%</div>
+            </div>
+            <div class="bar"><span data-width="90"></span></div>
+          </div>
+
+          <div class="card">
+            <div class="skill-head">
+              <div class="skill-ic s3"><i class="fa-brands fa-js"></i></div>
+              <div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-sub">DOM + UI logic</div>
+              </div>
+              <div class="skill-pct" data-pct="85">85%</div>
+            </div>
+            <div class="bar"><span data-width="85"></span></div>
+          </div>
+
+          <div class="card">
+            <div class="skill-head">
+              <div class="skill-ic s4"><i class="fa-brands fa-react"></i></div>
+              <div>
+                <div class="skill-name">React</div>
+                <div class="skill-sub">Components + SPA</div>
+              </div>
+              <div class="skill-pct" data-pct="75">75%</div>
+            </div>
+            <div class="bar"><span data-width="75"></span></div>
+          </div>
+        </div>
+
+        <div class="tool-row">
+          <div class="tool">
+            <i class="fa-solid fa-gear"></i>
+            <span>Git & GitHub</span>
+          </div>
+          <div class="tool">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span>Responsive UI</span>
+          </div>
+          <div class="tool">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Performance</span>
+          </div>
+          <div class="tool">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Debugging</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Projects</h2>
+      <p>Proof > claims. Here are real builds with live demos & code.</p>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Project filters">
+      <button class="fbtn active" data-filter="all">All</button>
+      <button class="fbtn" data-filter="ui">UI</button>
+      <button class="fbtn" data-filter="js">JavaScript</button>
+      <button class="fbtn" data-filter="css">CSS</button>
+      <button class="fbtn" data-filter="fullstack">Full Stack</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Project card -->
+      <article class="p-card" data-tags="ui js">
+        <div class="p-top">
+          <div class="p-icon pi1"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="p-meta">
+            <h3 class="p-title">Interactive Cursor Effects</h3>
+            <p class="p-sub">Fun micro-interactions using JS + CSS</p>
+          </div>
+        </div>
+        <div class="p-badges">
+          <span class="tag t1">UI</span><span class="tag t2">JS</span>
+        </div>
+        <p class="p-desc">
+          Cursor-follow glow + smooth easing. Clean code, reusable.
+        </p>
+        <div class="p-actions">
+          <button class="btn small p-open"
+            data-title="Interactive Cursor Effects"
+            data-desc="Cursor-follow glow + smooth easing with clean reusable logic."
+            data-stack="HTML, CSS, JavaScript"
+            data-live="https://example.com"
+            data-code="https://github.com/yourname/repo"
+          >
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+          <a class="btn small" href="https://github.com/yourname/repo" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+        </div>
+      </article>
+
+      <article class="p-card" data-tags="css ui">
+        <div class="p-top">
+          <div class="p-icon pi2"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="p-meta">
+            <h3 class="p-title">Login Card Animation</h3>
+            <p class="p-sub">Pure CSS animation + clean layout</p>
+          </div>
+        </div>
+        <div class="p-badges">
+          <span class="tag t3">CSS</span><span class="tag t1">UI</span>
+        </div>
+        <p class="p-desc">
+          Smooth hover states, shadows, and modern gradient accents.
+        </p>
+        <div class="p-actions">
+          <button class="btn small p-open"
+            data-title="Login Card Animation"
+            data-desc="Pure CSS animation with modern gradients and smooth transitions."
+            data-stack="HTML, CSS"
+            data-live="https://example.com"
+            data-code="https://github.com/yourname/repo"
+          >
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+          <a class="btn small" href="https://github.com/yourname/repo" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+        </div>
+      </article>
+
+      <article class="p-card" data-tags="js fullstack">
+        <div class="p-top">
+          <div class="p-icon pi3"><i class="fa-solid fa-rocket"></i></div>
+          <div class="p-meta">
+            <h3 class="p-title">Job Portal UI</h3>
+            <p class="p-sub">Dashboard + forms + listings</p>
+          </div>
+        </div>
+        <div class="p-badges">
+          <span class="tag t2">JS</span><span class="tag t4">Full Stack</span>
+        </div>
+        <p class="p-desc">
+          Clean components, search/filter UX, responsive layout.
+        </p>
+        <div class="p-actions">
+          <button class="btn small p-open"
+            data-title="Job Portal UI"
+            data-desc="Dashboard, listings, filters, forms. Built for real users."
+            data-stack="HTML, CSS, JavaScript"
+            data-live="https://example.com"
+            data-code="https://github.com/yourname/repo"
+          >
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+          <a class="btn small" href="https://github.com/yourname/repo" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+        </div>
+      </article>
+
+      <article class="p-card" data-tags="ui js">
+        <div class="p-top">
+          <div class="p-icon pi4"><i class="fa-solid fa-bolt"></i></div>
+          <div class="p-meta">
+            <h3 class="p-title">Loading Spinner Pack</h3>
+            <p class="p-sub">Multiple loaders with clean JS toggles</p>
+          </div>
+        </div>
+        <div class="p-badges">
+          <span class="tag t1">UI</span><span class="tag t2">JS</span>
+        </div>
+        <p class="p-desc">
+          Reusable spinner components + minimal, modern look.
+        </p>
+        <div class="p-actions">
+          <button class="btn small p-open"
+            data-title="Loading Spinner Pack"
+            data-desc="Multiple loaders + toggle logic. Great for UI kits."
+            data-stack="HTML, CSS, JavaScript"
+            data-live="https://example.com"
+            data-code="https://github.com/yourname/repo"
+          >
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+          <a class="btn small" href="https://github.com/yourname/repo" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div class="modal" id="pModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-label="Project preview">
+    <div class="modal-top">
+      <div class="modal-title" id="mTitle">Project</div>
+      <button class="btn ghost" id="mClose" aria-label="Close preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <p class="modal-desc" id="mDesc"></p>
+      <div class="modal-stack" id="mStack"></div>
+
+      <div class="modal-actions">
+        <a class="btn primary" id="mLive" href="#" target="_blank" rel="noreferrer">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+        </a>
+        <a class="btn" id="mCode" href="#" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="sec-head">
+          <h2>Services</h2>
+          <p>Pick what you need. Simple pricing later.</p>
+        </div>
+
+        <div class="cards-3">
+          <div class="card service">
+            <div class="service-ic c1"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Landing Page</h3>
+            <p>One-page modern landing with animations, responsive layout, and fast load.</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Hero + sections</li>
+              <li><i class="fa-solid fa-check"></i> CTA buttons</li>
+              <li><i class="fa-solid fa-check"></i> Mobile-first</li>
+            </ul>
+            <a class="btn small" href="#contact">Request</a>
+          </div>
+
+          <div class="card service">
+            <div class="service-ic c2"><i class="fa-solid fa-id-badge"></i></div>
+            <h3>Portfolio Website</h3>
+            <p>Clean personal portfolio like this with sections, icons, and contact form.</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> About + skills</li>
+              <li><i class="fa-solid fa-check"></i> Services + contact</li>
+              <li><i class="fa-solid fa-check"></i> Theme toggle</li>
+            </ul>
+            <a class="btn small" href="#contact">Request</a>
+          </div>
+
+          <div class="card service">
+            <div class="service-ic c3"><i class="fa-solid fa-code"></i></div>
+            <h3>UI Components</h3>
+            <p>Buttons, cards, loaders, sliders, navbars, and micro-interactions.</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Reusable UI</li>
+              <li><i class="fa-solid fa-check"></i> Clean CSS</li>
+              <li><i class="fa-solid fa-check"></i> JS interactions</li>
+            </ul>
+            <a class="btn small" href="#contact">Request</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="sec-head">
+          <h2>Contact</h2>
+          <p>Send a message. I’ll reply with next steps.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-card">
+            <h3>Let’s talk</h3>
+            <p class="muted2">
+              Fill the form. This demo validates inputs and shows a success message (no backend).
+              If you want, I can add EmailJS / Google Form backend too.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="ci i1"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <div class="ci-title">Email</div>
+                  <div class="ci-sub">kalai@email.com</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="ci i2"><i class="fa-solid fa-phone"></i></span>
+                <div>
+                  <div class="ci-title">Phone</div>
+                  <div class="ci-sub">+91 00000 00000</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="ci i3"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <div class="ci-title">Location</div>
+                  <div class="ci-sub">Tamil Nadu, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card form-card">
+            <form id="contactForm" novalidate>
+              <div class="row">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="Your name" autocomplete="name" />
+                  <small class="err"></small>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="you@gmail.com" autocomplete="email" />
+                  <small class="err"></small>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" placeholder="Project / Work" />
+                <small class="err"></small>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell me what you need..."></textarea>
+                <small class="err"></small>
+              </div>
+
+              <button class="btn primary full" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+              </button>
+
+              <div class="toast" id="toast" role="status" aria-live="polite">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Message sent successfully!</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="foot-left">
+          <div class="logo mini-logo">
+            <span class="logo-mark">K</span>
+            <span class="logo-text">Kalai</span>
+          </div>
+          <div class="foot-note">© <span id="year"></span> Kalai. All rights reserved.</div>
+        </div>
+
+        <a class="to-top" href="#top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
